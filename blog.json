@@ -1,0 +1,216 @@
+{
+  "repo": "https://github.com/drenepiedra/noteLink",
+  "updatedAt": "2026-10-20T14:51:12.231Z",
+  "posts": [
+    {
+      "sha": "07b2db7c640af341db137f83af673681866dffc8",
+      "date": "2026-10-19T12:24:07-04:00",
+      "tag": "pago",
+      "url": "https://github.com/drenepiedra/noteLink/commit/07b2db7c640af341db137f83af673681866dffc8",
+      "es": {
+        "title": "Compras dentro de la app con Google Play y RevenueCat",
+        "body": "La pasarela ya está conectada de punta a punta: Google Play procesa el pago y RevenueCat verifica la compra y mantiene el estado del plan. El paywall abre el flujo real de compra."
+      },
+      "en": {
+        "title": "In-app purchases with Google Play and RevenueCat",
+        "body": "Checkout is wired end to end: Google Play processes the payment while RevenueCat verifies the purchase and keeps the plan status in sync. The paywall now opens the real purchase flow."
+      }
+    },
+    {
+      "sha": "de9fb6de76949fe3dc86c84b7325047145ef53d0",
+      "date": "2026-10-15T22:10:36-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/de9fb6de76949fe3dc86c84b7325047145ef53d0",
+      "es": {
+        "title": "Historial, ingresos, gastos y balance",
+        "body": "La nota distingue ingresos de gastos, muestra el balance al instante y suma con centavos y símbolos de moneda. También llegaron mejoras de interfaz en toda la pantalla."
+      },
+      "en": {
+        "title": "History, income, expenses and balance",
+        "body": "A note now tells income from expenses, shows your balance instantly and handles cents and currency symbols. UI polish landed across the screen too."
+      }
+    },
+    {
+      "sha": "dc02c1c3e812c5a72ac1c56391ac677e5aff82e7",
+      "date": "2026-10-13T23:02:06-04:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/dc02c1c3e812c5a72ac1c56391ac677e5aff82e7",
+      "es": {
+        "title": "Secciones colapsables",
+        "body": "Las listas largas se pueden plegar y desplegar para mantener la nota ordenada sin perder nada de lo que escribiste."
+      },
+      "en": {
+        "title": "Collapsible sections",
+        "body": "Long lists can be folded and unfolded to keep the note tidy without losing anything you wrote."
+      }
+    },
+    {
+      "sha": "6bb80380ff2f65f39dc26d521b630dbb84be5322",
+      "date": "2026-10-13T21:58:19-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/6bb80380ff2f65f39dc26d521b630dbb84be5322",
+      "es": {
+        "title": "Ingresos y balance en la nota",
+        "body": "Además de los gastos, ahora puedes anotar ingresos. El balance se calcula solo con todo lo que hay en la nota."
+      },
+      "en": {
+        "title": "Income and balance in your note",
+        "body": "Alongside expenses, you can now write down income. The balance adds itself up from everything in the note."
+      }
+    },
+    {
+      "sha": "5d735ba2e5782e1cfa4880257874d987ae002245",
+      "date": "2026-10-13T20:27:20-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/5d735ba2e5782e1cfa4880257874d987ae002245",
+      "es": {
+        "title": "Zoom de texto y edición de enlaces",
+        "body": "Puedes ampliar el texto de la nota y editar un enlace deslizándolo a la derecha. También mejoramos la colocación del menú contextual y la detección de precios."
+      },
+      "en": {
+        "title": "Text zoom and link editing",
+        "body": "Zoom into your note text and edit a link by swiping it to the right. We also improved context menu placement and price detection."
+      }
+    },
+    {
+      "sha": "21cc7e81beea321c562b7f0f91369ddcfb9badd5",
+      "date": "2026-10-12T23:06:27-04:00",
+      "tag": "fix",
+      "url": "https://github.com/drenepiedra/noteLink/commit/21cc7e81beea321c562b7f0f91369ddcfb9badd5",
+      "es": {
+        "title": "Correcciones de errores",
+        "body": "Ajustes internos y arreglos de estabilidad detectados durante las pruebas de la app."
+      },
+      "en": {
+        "title": "Bug fixes",
+        "body": "Internal tweaks and stability fixes found while testing the app."
+      }
+    },
+    {
+      "sha": "af7813b5b5280cfcc2727069060857e24a7510aa",
+      "date": "2026-10-12T20:26:43-04:00",
+      "tag": "pago",
+      "url": "https://github.com/drenepiedra/noteLink/commit/af7813b5b5280cfcc2727069060857e24a7510aa",
+      "es": {
+        "title": "Ajustes antes de la pasarela de pago",
+        "body": "Pulimos los últimos detalles de la interfaz y del flujo de compra antes de conectar los pagos."
+      },
+      "en": {
+        "title": "Polish before checkout",
+        "body": "We polished the last details of the interface and the purchase flow before wiring up payments."
+      }
+    },
+    {
+      "sha": "b42fdaabf9c472e06dd44a7ca0abe9d8ddd102ac",
+      "date": "2026-10-11T21:16:35-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/b42fdaabf9c472e06dd44a7ca0abe9d8ddd102ac",
+      "es": {
+        "title": "Comentarios por línea",
+        "body": "Cada línea puede llevar un comentario para explicar de qué va el gasto o el enlace."
+      },
+      "en": {
+        "title": "Comments per line",
+        "body": "Every line can carry a comment explaining what an expense or link is about."
+      }
+    },
+    {
+      "sha": "c5ceea7e638fd330b6feb3d9937ce80b1c58c289",
+      "date": "2026-10-11T20:38:24-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/c5ceea7e638fd330b6feb3d9937ce80b1c58c289",
+      "es": {
+        "title": "Unidades de medida",
+        "body": "La calculadora entiende unidades al escribir, así puedes anotar cantidades y medidas sin salir de la nota."
+      },
+      "en": {
+        "title": "Units of measure",
+        "body": "The calculator understands units as you type, so you can jot down quantities and measurements without leaving the note."
+      }
+    },
+    {
+      "sha": "11edf2137c889329f80f808f37b7ae52291696a3",
+      "date": "2026-10-11T20:14:00-04:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/11edf2137c889329f80f808f37b7ae52291696a3",
+      "es": {
+        "title": "Mejoras de interfaz y funcionamiento",
+        "body": "Retoques generales de UI y ajustes de comportamiento para que escribir y navegar sea más fluido."
+      },
+      "en": {
+        "title": "UI and behavior improvements",
+        "body": "General UI polish and behavior tweaks to make writing and navigating smoother."
+      }
+    },
+    {
+      "sha": "b36320f0281509a033d39764043f948457b459f8",
+      "date": "2026-10-11T14:06:03-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/b36320f0281509a033d39764043f948457b459f8",
+      "es": {
+        "title": "Categorías en enlaces",
+        "body": "Los enlaces guardados se pueden etiquetar por categoría para encontrarlos rápido en el portapapeles."
+      },
+      "en": {
+        "title": "Link categories",
+        "body": "Saved links can be tagged by category so you can find them quickly in the clipboard."
+      }
+    },
+    {
+      "sha": "f837da5f14397bca2616cfdaf66c4b4bb385ba87",
+      "date": "2026-10-11T13:01:25-04:00",
+      "tag": "fix",
+      "url": "https://github.com/drenepiedra/noteLink/commit/f837da5f14397bca2616cfdaf66c4b4bb385ba87",
+      "es": {
+        "title": "Arreglos y nuevas funciones",
+        "body": "Correcciones de la primera versión junto con las primeras funciones nuevas del bloc."
+      },
+      "en": {
+        "title": "Fixes and new features",
+        "body": "Fixes on the first build together with the first new features for the notepad."
+      }
+    },
+    {
+      "sha": "aa01a7d677cfd4ee88aadbfa4ef399e5d00d8416",
+      "date": "2026-10-10T21:56:05-04:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/aa01a7d677cfd4ee88aadbfa4ef399e5d00d8416",
+      "es": {
+        "title": "Cambios de funcionamiento y UI",
+        "body": "Ajustes en la forma de escribir y editar líneas, junto con una interfaz más clara."
+      },
+      "en": {
+        "title": "Behavior and UI changes",
+        "body": "Tweaks to how lines are written and edited, along with a clearer interface."
+      }
+    },
+    {
+      "sha": "1cf6b99a9a73f7c2b608ff9afd8989d253ba3246",
+      "date": "2026-10-10T21:05:22-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/1cf6b99a9a73f7c2b608ff9afd8989d253ba3246",
+      "es": {
+        "title": "Soporte de monedas",
+        "body": "La nota reconoce símbolos de moneda para que los montos se muestren y sumen como esperas."
+      },
+      "en": {
+        "title": "Currency support",
+        "body": "The note recognizes currency symbols so amounts display and add up the way you expect."
+      }
+    },
+    {
+      "sha": "df446ac96c90991a473cee3293e77c7a12d52f37",
+      "date": "2026-10-10T20:08:38-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/df446ac96c90991a473cee3293e77c7a12d52f37",
+      "es": {
+        "title": "Nace Renglón",
+        "body": "Primera versión: una nota por tema, resultados al lado de cada línea y un portapapeles que guarda los enlaces que copias."
+      },
+      "en": {
+        "title": "Renglón is born",
+        "body": "First build: one note per topic, results beside each line, and a clipboard that saves the links you copy."
+      }
+    }
+  ]
+}
