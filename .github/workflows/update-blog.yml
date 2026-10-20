@@ -17,15 +17,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Checkout noteLink
+        env:
+          DEPLOY_KEY: ${{ secrets.NOTELINK_DEPLOY_KEY }}
+        run: |
+          if [ -z "$DEPLOY_KEY" ]; then
+            echo "Missing NOTELINK_DEPLOY_KEY secret" >&2
+            exit 1
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/notelink_key
+          chmod 600 ~/.ssh/notelink_key
+          ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/notelink_key -o IdentitiesOnly=yes" \
+            git clone --quiet --depth 80 git@github.com:drenepiedra/noteLink.git /tmp/noteLink
       - name: Rebuild blog.json from commits
         run: node scripts/build-blog.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_PATH: /tmp/noteLink
       - name: Commit if changed
         run: |
           if [ -z "$(git status --porcelain blog.json)" ]; then
