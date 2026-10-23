@@ -4,7 +4,6 @@
 
 import { getLang, t } from "./i18n.js";
 
-const REPO_URL = "https://github.com/drenepiedra/noteLink";
 const PAGE_SIZE = 6;
 
 let posts = null;
@@ -64,11 +63,10 @@ export function renderBlog() {
     .map((post) => {
       const content = post[lang] || post.es || {};
       const title = content.title || (post.es && post.es.title) || "";
+      const body = content.body || "";
 
       return (
-        '<a class="post" href="' +
-        escapeHtml(post.url || REPO_URL) +
-        '" target="_blank" rel="noopener">' +
+        '<article class="post">' +
         '<div class="post-top">' +
         '<span class="post-date">' +
         escapeHtml(formatDate(post.date)) +
@@ -80,18 +78,63 @@ export function renderBlog() {
         '<h3 class="post-title">' +
         escapeHtml(title) +
         "</h3>" +
-        (content.body ? '<p class="post-body">' + escapeHtml(content.body) + "</p>" : "") +
-        '<span class="post-cta">' +
-        escapeHtml(t("blogcommit")) +
-        " &rarr;</span></a>"
+        (body
+          ? '<p class="post-body is-clamped">' +
+            escapeHtml(body) +
+            "</p>" +
+            '<button type="button" class="post-cta post-more" aria-expanded="false" hidden>' +
+            escapeHtml(t("postmore")) +
+            "</button>"
+          : "") +
+        "</article>"
       );
     })
     .join("");
+
+  updateClampedPosts(list);
 
   const button = document.getElementById("blog-more");
   if (button) {
     button.hidden = posts.length <= PAGE_SIZE;
     button.textContent = showAll ? t("blogl") : t("blogmore");
+  }
+}
+
+function updateClampedPosts(list) {
+  if (!list) return;
+
+  list.querySelectorAll(".post").forEach((card) => {
+    const body = card.querySelector(".post-body");
+    const more = card.querySelector(".post-more");
+    if (!body || !more) return;
+
+    const expanded = card.classList.contains("is-expanded");
+    body.classList.toggle("is-clamped", !expanded);
+
+    if (expanded) {
+      more.hidden = false;
+      return;
+    }
+
+    more.hidden = body.scrollHeight <= body.clientHeight + 1;
+  });
+}
+
+function togglePost(button) {
+  const card = button.closest(".post");
+  if (!card) return;
+
+  const body = card.querySelector(".post-body");
+  if (!body) return;
+
+  const expanded = !card.classList.contains("is-expanded");
+  card.classList.toggle("is-expanded", expanded);
+  body.classList.toggle("is-clamped", !expanded);
+  button.setAttribute("aria-expanded", expanded ? "true" : "false");
+  button.textContent = expanded ? t("postless") : t("postmore");
+
+  if (!expanded) {
+    button.hidden = body.scrollHeight <= body.clientHeight + 1;
   }
 }
 
@@ -118,12 +161,30 @@ function loadBlog() {
 
 export function initBlog() {
   const button = document.getElementById("blog-more");
+  const list = document.getElementById("blog-list");
 
   if (button) {
     button.addEventListener("click", () => {
       showAll = !showAll;
       renderBlog();
     });
+  }
+
+  if (list) {
+    list.addEventListener("click", (event) => {
+      const more = event.target.closest(".post-more");
+      if (more) togglePost(more);
+    });
+  }
+
+  let resizeTimer = null;
+  window.addEventListener("resize", () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(() => updateClampedPosts(list), 150);
+  });
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => updateClampedPosts(list));
   }
 
   loadBlog();
