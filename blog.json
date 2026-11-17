@@ -1,7 +1,133 @@
 {
   "repo": "https://github.com/drenepiedra/noteLink",
-  "updatedAt": "2026-10-20T14:51:12.231Z",
+  "updatedAt": "2026-11-17T00:00:00.000Z",
   "posts": [
+    {
+      "sha": "e31527c234007f68b212404b60787d859da268d0",
+      "date": "2026-11-12T14:27:31-05:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/e31527c234007f68b212404b60787d859da268d0",
+      "es": {
+        "title": "Pulido de notas y cantidades",
+        "body": "Últimos ajustes de la piel nueva: la nota muestra mejor las cantidades, los importes y las líneas, con detalles más limpios en la vista clásica y en tarjetas."
+      },
+      "en": {
+        "title": "Note and amount polish",
+        "body": "Final touches on the new skin: notes show amounts, values and lines more clearly, with cleaner details in both the classic and cards views."
+      }
+    },
+    {
+      "sha": "14a71fb0d04afbcb1aa8660e11d047bd8662a0fd",
+      "date": "2026-11-11T22:18:22-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/14a71fb0d04afbcb1aa8660e11d047bd8662a0fd",
+      "es": {
+        "title": "Calendario con suscripciones y recordatorios",
+        "body": "Vista mensual con gastos e ingresos previstos, suscripciones recurrentes con sus logos y avisos automáticos dos días antes y el mismo día."
+      },
+      "en": {
+        "title": "Calendar with subscriptions and reminders",
+        "body": "A monthly view with planned expenses and income, recurring subscriptions with their logos, and automatic reminders two days before and on the day."
+      }
+    },
+    {
+      "sha": "8b8a3aa01912e022e57876aa0fd84fa0edf4ff29",
+      "date": "2026-11-11T21:20:42-04:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/8b8a3aa01912e022e57876aa0fd84fa0edf4ff29",
+      "es": {
+        "title": "Vista de tarjetas y motor de cantidades",
+        "body": "Cada nota puede mostrarse como tarjeta con un editor enfocado, y el motor de cantidades interpreta mejor símbolos, centavos y formato de moneda."
+      },
+      "en": {
+        "title": "Cards view and a better amounts engine",
+        "body": "Every note can be shown as a card with a focused editor, while the amounts engine handles symbols, cents and currency formatting more reliably."
+      }
+    },
+    {
+      "sha": "9aa8e2370c532350561905eabfa7a828b7e89272",
+      "date": "2026-11-06T06:50:50-04:00",
+      "tag": "ui",
+      "url": "https://github.com/drenepiedra/noteLink/commit/9aa8e2370c532350561905eabfa7a828b7e89272",
+      "es": {
+        "title": "Llega la piel nueva",
+        "body": "Nueva apariencia en la barra, las pestañas, las líneas, el resumen y los ajustes, con modo oscuro, tamaño de texto y el estilo de nota clásico o tarjetas."
+      },
+      "en": {
+        "title": "A new skin arrives",
+        "body": "A fresh look for the bar, tabs, lines, summary and settings, with dark mode, text size and a classic or cards note style."
+      }
+    },
+    {
+      "sha": "57fa9221fd1ca62661ca862e5ddaec3dfbe8c201",
+      "date": "2026-11-05T22:39:33-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/57fa9221fd1ca62661ca862e5ddaec3dfbe8c201",
+      "es": {
+        "title": "Recordatorios y panel de ajustes",
+        "body": "Notificaciones del calendario, un panel de ajustes más completo y correcciones de funcionamiento en toda la app."
+      },
+      "en": {
+        "title": "Reminders and a settings panel",
+        "body": "Calendar notifications, a more complete settings panel and behavior fixes across the app."
+      }
+    },
+    {
+      "sha": "f49530d736e480124b983600e35a1e7335d0bb19",
+      "date": "2026-11-03T22:01:02-05:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/f49530d736e480124b983600e35a1e7335d0bb19",
+      "es": {
+        "title": "Estadísticas, búsqueda y copia de seguridad",
+        "body": "Estadísticas por línea, búsqueda de notas y líneas fijadas, selección múltiple y exportación/importación de todo tu contenido en JSON."
+      },
+      "en": {
+        "title": "Statistics, search and backup",
+        "body": "Per-line statistics, note search and pinned lines, multi-selection and JSON export/import for all your content."
+      }
+    },
+    {
+      "sha": "ba82ac713720df5e813db6bf0d31821c152dd3b4",
+      "date": "2026-11-03T18:42:04-05:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/ba82ac713720df5e813db6bf0d31821c152dd3b4",
+      "es": {
+        "title": "Deudas y ajustes de interfaz",
+        "body": "Pantalla de deudas con por cobrar, por pagar y neto; puedes saldar una deuda, ajustar su importe y aprovechar mejores gestos de swipe."
+      },
+      "en": {
+        "title": "Debts and UI polish",
+        "body": "A debts screen with to collect, to pay and net totals; settle a debt, adjust its amount and use improved swipe gestures."
+      }
+    },
+    {
+      "sha": "ececba2feb367d4007069d975bd5630256f6e9a6",
+      "date": "2026-11-02T20:21:24-05:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/ececba2feb367d4007069d975bd5630256f6e9a6",
+      "es": {
+        "title": "Onboarding y cambios estéticos",
+        "body": "Nuevo onboarding que enseña gestos, comandos, ingresos, comentarios y qué-if, junto con retoques en hojas, menús y el paywall."
+      },
+      "en": {
+        "title": "Onboarding and a visual refresh",
+        "body": "A new onboarding that teaches gestures, commands, income, comments and what-if, along with polish across sheets, menus and the paywall."
+      }
+    },
+    {
+      "sha": "a8baf7bdd02d4dcf5fe1a63cd59b7408ea254671",
+      "date": "2026-10-31T22:35:00-04:00",
+      "tag": "novedad",
+      "url": "https://github.com/drenepiedra/noteLink/commit/a8baf7bdd02d4dcf5fe1a63cd59b7408ea254671",
+      "es": {
+        "title": "Planes, qué-if y copias de seguridad",
+        "body": "El qué-if te dice si una compra encaja, los planes comparan límites y las copias de seguridad guardan notas, enlaces, deudas y ajustes."
+      },
+      "en": {
+        "title": "Plans, what-if and backups",
+        "body": "What-if tells you whether a purchase fits, plans compare limits, and backups keep your notes, links, debts and settings safe."
+      }
+    },
     {
       "sha": "07b2db7c640af341db137f83af673681866dffc8",
       "date": "2026-10-19T12:24:07-04:00",
